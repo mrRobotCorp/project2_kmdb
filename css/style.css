@@ -1,0 +1,55 @@
+@import './reset.css';
+body { font-family: sRegular; overflow-x: hidden;} 
+
+header { padding: 20px 0; width: 100%; height: 90px; border: 2px solid #999;}
+header ul li { display: inline-block; } 
+
+header nav { display: flex; justify-content: space-around; align-items: center; }
+header nav h1 { width: 330px; height: 40px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain;}
+header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; }
+/* header nav .sideMenu li { margin-right: 14px; } */
+header nav .sideMenu li a { font-size: 14px; }
+header form { height: 50px; border: 1px solid #000; overflow: hidden;}
+header form span { display: inline-block; height: 46px; padding: 0 16px; margin-right: 10px; font-size: 14px; color: #666; background-color: #f9f9f9;}
+header form .sBtn { width: 23px; height: 23px; background: url(../source/search.png) center no-repeat; margin-left: 16px; background-size: 20px; border: none; outline: none; opacity: .7; cursor: pointer;}
+header form .sBtn:hover { opacity: 1;}
+header form input[name=search] { border: none; outline: none; height: 46px; font-size: 17px; overflow: visible; font-family: sLight;}
+
+/* ------------bottom gnb --------------- */
+header .btMenu { display: flex; justify-content: space-around; align-items: center; margin-top: 30px;}
+header .btMenu { margin-left: 200px;}
+header .btMenu #gnb li { margin: 0 60px; }
+header .btMenu #gnb li a { color: #212529; padding: 0 10px 6px 10px; transition: all .3s; position: relative; font-size: 17px; font-family: sMedium; } 
+header .btMenu #gnb li a:hover { color: #000; } 
+header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; width: 0; transform: translateX(-50%); left: 50%; bottom: -15%; transition: .3s ease-out; background-color: #5f00b2; }
+header .btMenu #gnb li a:hover:after { width: 100%; }
+
+header .btMenu .gnbWrapAll { position: fixed; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
+header .btMenu .gnbWrapAll.active { width: 70%; } 
+header .btMenu .gnbWrap, .gnbLog { margin-left: 100px;} 
+header .btMenu .gnbWrap li { display: block; padding: 25px 0; font-size: 17px; font-family: sMedium; } 
+header .btMenu .gnbWrap li:first-child { margin-top: 70px; } 
+
+header .btMenu .gnbLog li { display: block; margin-bottom: 13px; }
+header .btMenu .gnbLog li a { color: #8d8d8d; font-size: 14px; font-family: sLight; }
+/* -------------------------------------- */
+.menu-trigger { width: 25px; height: 20.5px; background-color: transparent; border: none; position: relative; cursor: pointer; z-index: 170; display: inline-block; } 
+.menu-trigger span { background-color:#bebebe; position: absolute; border-radius: 2px; transition: .3s cubic-bezier(.8, .5, .2, 1.4); width:100%; height: 3px; transition-duration: 500ms}
+.menu-trigger:hover span { background-color: #8d8d8d; }
+
+.menu-trigger span:nth-child(2) { top: 0px; left: 0px; } 
+.menu-trigger span:nth-child(3) { top: 9px; left: 0px; opacity: 1; } 
+.menu-trigger span:nth-child(4) { bottom: 0px; left: 0px; } 
+
+.menu-trigger:not(.open):hover span:nth-child(2) { transform: rotate(6deg) scaleY(1.1); } 
+.menu-trigger:not(.open):hover span:nth-child(3) { transform: rotate(-4deg) scaleY(1.1); } 
+.menu-trigger:not(.open):hover span:nth-child(4) { transform: rotate(6deg) scaleY(1.1); } 
+.menu-trigger.open span:nth-child(2) { transform: rotate(45deg); top: 13px; } 
+.menu-trigger.open span:nth-child(3) { opacity:0; } 
+.menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
+
+/* ------------------ scrollTop ------------------------- */
+#scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 2px 7px #a8a8a8c7; color:#000; align-content: center; width: 50px; height: 50px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
+#scrollTop:hover { transition: 0.5s ease; border: 1px solid #bebebe; background-color: #dededee9; } 
+#scrollTop::before { content: "\2303"; position: absolute; width: 50px; top: 7px; left: 0; color: #000; font-size: 18px; } 
+#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; } 
