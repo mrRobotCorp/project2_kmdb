@@ -9,36 +9,31 @@ header nav h1 { width: 330px; height: 40px; background: url(../source/logo_kmdb.
 header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; }
 /* header nav .sideMenu li { margin-right: 14px; } */
 header nav .sideMenu li a { color: #666; font-size: 13px; }
-header form { width: 30%; height: 50px; border: 1px solid #000; overflow: hidden;}
+header form { height: 50px; border: 1px solid #000; overflow: hidden;}
 header form span { display: inline-block; height: 46px; padding: 0 16px; margin-right: 10px; font-size: 14px; color: #666; background-color: #f9f9f9;}
 header form .sBtn { width: 23px; height: 23px; background: url(../source/search.png) center no-repeat; margin-left: 16px; background-size: 20px; border: none; outline: none; opacity: .7; cursor: pointer;}
 header form .sBtn:hover { opacity: 1;}
 header form input[name=search] { border: none; outline: none; height: 46px; font-size: 17px; overflow: visible; font-family: sLight;}
 
 /* ------------bottom gnb --------------- */
-header .btMenu { display: flex; justify-content: space-around; align-items: center; height: 60px; margin-top: 30px; padding-left: 160px; border-top: 1px solid #b6b6b6; border-bottom: 1px solid #b6b6b6;}
-header .btMenu #gnb { height: inherit;}
-header .btMenu #gnb li { height: inherit; margin: 0 60px; display: inline-block;  }
-header .btMenu #gnb li a { color: #212529; width: 80px; display: flex; justify-content: center; align-items: center; height: 100%; transition: all .3s; position: relative; font-size: 17px; font-family: sMedium; } 
+header .btMenu { display: flex; justify-content: space-around; align-items: center; height: 60px; margin-top: 30px; border-top: 1px solid #999; border-bottom: 1px solid #999;}
+header .btMenu #gnb li { height: 100%; margin: 0 60px; display: inline-block;}
+header .btMenu #gnb li a { color: #212529; display: inline-block; height: 100%; transition: all .3s; position: relative; font-size: 17px; font-family: sMedium; } 
 header .btMenu #gnb li a:hover { color: #000; } 
-header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; width: 0; transform: translateX(-50%); left: 50%; bottom: 0; transition: .3s ease-out; background-color: #534CBF; }
+header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; width: 0; transform: translateX(-50%); left: 50%; bottom: -15%; transition: .3s ease-out; background-color: #534CBF; }
 header .btMenu #gnb li a:hover:after { width: 100%; }
 
 header .btMenu .gnbWrapAll { position: fixed; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
 header .btMenu .gnbWrapAll.active { width: 70%; } 
 header .btMenu .gnbWrap, .gnbLog { margin-left: 100px;} 
-header .btMenu .gnbWrap li { display: block; padding: 25px 0; font-size: 20px; font-family: sMedium; } 
+header .btMenu .gnbWrap li { display: block; padding: 25px 0; font-size: 17px; font-family: sMedium; } 
 header .btMenu .gnbWrap li:first-child { margin-top: 70px; } 
 
-header .btMenu .gnbLog { margin-top: 20px;}
-header .btMenu .gnbLog li { display: block; margin-bottom: 13px; }
-header .btMenu .gnbLog li a { color: #8d8d8d; font-size: 14px; font-family: sLight; }
-
-header .btMenu .sideWrap { display: flex; justify-content: space-between; align-items: center; width: 160px;}
-header .btMenu .upBtn { width: 100px; height: 28px; font-size: 14px; color: #534CBF; border: 1.5px solid #534CBF; border-radius: 20px; background-color: #fff; transition: all .3s; cursor: pointer;}
-header .btMenu .upBtn:hover { background-color: #d4d1ff;}
+header .btMenu .upBtn { color: #534CBF; border: 1px solid #534CBF; border-radius: 20px;}
 header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; background: url(../source/bell.png) center center no-repeat; background-size: contain;} 
 
+header .btMenu .gnbLog li { display: block; margin-bottom: 13px; }
+header .btMenu .gnbLog li a { color: #8d8d8d; font-size: 14px; font-family: sLight; }
 /* -------------------------------------- */
 .menu-trigger { width: 25px; height: 20.5px; background-color: transparent; border: none; position: relative; cursor: pointer; z-index: 170; display: inline-block; } 
 .menu-trigger span { background-color:#bebebe; position: absolute; border-radius: 2px; transition: .3s cubic-bezier(.8, .5, .2, 1.4); width:100%; height: 3px; transition-duration: 500ms}
