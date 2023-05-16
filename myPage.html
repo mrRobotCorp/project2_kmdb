@@ -22,7 +22,58 @@
     <title>로그인</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <a href="./index.html"><h1></h1></a>
+            <form>
+                <span>통합검색</span>
+                <input type="text" name="search" placeholder="영화, 영화인, 한국영상자료원 보유 자료 검색">
+                <button class="sBtn"></button>
+            </form>
+            <ul class="sideMenu">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="./register.html">회원가입</a></li>
+                <li><a href="#">고객서비스</a></li>
+                <li><a href="#">ENG</a></li>
+            </ul>
+        </nav>
+        <div class="btMenu">
+            <ul id="gnb">
+                <li><a href="#">DB</a></li>
+                <li><a href="#">컬렉션</a></li>
+                <li><a href="#">VOD</a></li>
+                <li><a href="#">영화글</a></li>
+            </ul>
+            <div class="gnbWrapAll">
+                <ul class="gnbWrap">
+                    <li><a href="#">DB</a></li>
+                    <li><a href="#">영화글</a></li>
+                    <li><a href="#">VOD</a></li>
+                    <li><a href="#">컬렉션</a></li>
+                    <li><a href="#">고객서비스</a></li>
+                </ul>
+                <ul class="gnbLog">
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./myPage.html">마이페이지</a></li>
+                </ul>
+            </div>
+            <div class="sideWrap">
+                <button type="button" class="upBtn">
+                    업데이트
+                    <i></i>
+                </button>
+                <button id="menuBtn" class="menu-trigger">
+                    <span class="blind">메뉴보기</span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+
     <footer>
         <div id="scrollTop"><span class="blind">맨 위로 가기</span></div>
         <div class="footLeft">
@@ -48,5 +99,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

@@ -1,49 +1,48 @@
-@import './reset.css';
-body { font-family: sRegular; overflow-x: hidden;} 
+@import './reset.css';body { font-family: sRegular; overflow-x: hidden; } 
 
-header { padding: 20px 0; width: 100%; height: 90px; }
+header { padding: 20px 0; width: 100%; height: 90px; } 
 header ul li { display: inline-block; } 
 
-header nav { display: flex; justify-content: space-around; align-items: center; }
-header nav h1 { width: 330px; height: 40px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain;}
-header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; }
+header nav { display: flex; justify-content: space-around; align-items: center; } 
+header nav h1 { width: 330px; height: 50px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain; } 
+header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; } 
 /* header nav .sideMenu li { margin-right: 14px; } */
-header nav .sideMenu li a { color: #666; font-size: 13px; }
-header nav .sideMenu li:hover a { color: #222;}
-header form { display: flex; align-items: center; width: 30%; height: 50px; border: 1px solid #000; overflow: hidden;}
-header form span { display: inline-block; padding: 0 16px; height: 100%; display: flex; align-items: center; margin-right: 10px; font-size: 14px; color: #666; background-color: #f5f5f5;}
-header form .sBtn { width: 23px; height: 23px; background: url(../source/search.png) center no-repeat; margin-left: 16px; background-size: 20px; border: none; outline: none; opacity: .7; cursor: pointer;}
-header form .sBtn:hover { opacity: 1;}
-header form input[name=search] { border: none; outline: none; width: 65%; height: 46px; font-size: 15px; overflow: visible; font-family: sLight;}
+header nav .sideMenu li a { color: #666; font-size: 13px; } 
+header nav .sideMenu li:hover a { color: #222; } 
+header form { display: flex; align-items: center; width: 30%; height: 50px; border: 1px solid #000; overflow: hidden; } 
+header form span { display: inline-block; padding: 0 16px; height: 100%; display: flex; align-items: center; margin-right: 10px; font-size: 14px; color: #666; background-color: #f5f5f5; } 
+header form .sBtn { width: 23px; height: 23px; background: url(../source/search.png) center no-repeat; margin-left: 16px; background-size: 20px; border: none; outline: none; opacity: .7; cursor: pointer; } 
+header form .sBtn:hover { opacity: 1; } 
+header form input[name=search] { border: none; outline: none; width: 65%; height: 46px; font-size: 15px; overflow: visible; font-family: sLight; } 
 
 /* ------------bottom gnb --------------- */
-header .btMenu { display: flex; justify-content: space-around; align-items: center; height: 60px; margin-top: 30px; padding-left: 18%; border-top: 1px solid #b6b6b6; border-bottom: 1px solid #b6b6b6;}
-header .btMenu #gnb { height: inherit;}
-header .btMenu #gnb li { height: inherit; margin: 0 60px; display: inline-block;  }
+header .btMenu { display: flex; justify-content: space-around; align-items: center; height: 60px; margin-top: 30px; padding-left: 18%; border-top: 1px solid #b6b6b6; border-bottom: 1px solid #b6b6b6; } 
+header .btMenu #gnb { height: inherit; } 
+header .btMenu #gnb li { height: inherit; margin: 0 60px; display: inline-block; } 
 header .btMenu #gnb li a { color: #212529; width: 80px; display: flex; justify-content: center; align-items: center; height: 100%; transition: all .3s; position: relative; font-size: 17px; font-family: sMedium; } 
 header .btMenu #gnb li a:hover { color: #000; } 
-header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; width: 0; transform: translateX(-50%); left: 50%; bottom: 0; transition: .3s ease-out; background-color: #534CBF; }
-header .btMenu #gnb li a:hover:after { width: 100%; }
+header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; width: 0; transform: translateX(-50%); left: 50%; bottom: 0; transition: .3s ease-out; background-color: #534CBF; } 
+header .btMenu #gnb li a:hover:after { width: 100%; } 
 
 header .btMenu .gnbWrapAll { display: flex; flex-direction: column; justify-content: center; position: fixed; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
-header .btMenu .gnbWrapAll.active { width: 70%; } 
-header .btMenu .gnbWrap, .gnbLog { margin-left: 100px;} 
+header .btMenu .gnbWrapAll.active { width: 75%; } 
+header .btMenu .gnbWrap, .gnbLog { margin-left: 160px; } 
 header .btMenu .gnbWrap li { display: block; padding: 25px 0; font-size: 23px; font-family: sMedium; } 
 
-header .btMenu .gnbLog { margin-top: 20px;}
-header .btMenu .gnbLog li { display: block; margin-bottom: 13px; }
-header .btMenu .gnbLog li a { color: #8d8d8d; font-size: 14px; font-family: sLight; }
-header .btMenu .gnbLog li:hover a { color: #222; }
+header .btMenu .gnbLog { margin-top: 30px; } 
+header .btMenu .gnbLog li { display: block; margin-bottom: 13px; } 
+header .btMenu .gnbLog li a { color: #8d8d8d; font-size: 14px; font-family: sLight; } 
+header .btMenu .gnbLog li:hover a { color: #222; } 
 
-header .btMenu .sideWrap { display: flex; justify-content: space-between; align-items: center; width: 160px;}
-header .btMenu .upBtn { width: 100px; height: 28px; font-size: 14px; color: #534CBF; border: 1.5px solid #534CBF; border-radius: 20px; background-color: #fff; transition: all .3s; cursor: pointer;}
-header .btMenu .upBtn:hover { background-color: #d4d1ff;}
-header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; background: url(../source/bell.png) center center no-repeat; background-size: contain;} 
+header .btMenu .sideWrap { display: flex; justify-content: space-between; align-items: center; width: 160px; } 
+header .btMenu .upBtn { width: 100px; height: 28px; font-size: 14px; color: #534CBF; border: 1.5px solid #534CBF; border-radius: 20px; background-color: #fff; transition: all .3s; cursor: pointer; } 
+header .btMenu .upBtn:hover { background-color: #d4d1ff; } 
+header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; background: url(../source/bell.png) center center no-repeat; background-size: contain; } 
 
 /* -------------------------------------- */
 .menu-trigger { width: 25px; height: 20.5px; background-color: transparent; border: none; position: relative; cursor: pointer; z-index: 170; display: inline-block; } 
-.menu-trigger span { background-color:#bebebe; position: absolute; border-radius: 2px; transition: .3s cubic-bezier(.8, .5, .2, 1.4); width:100%; height: 3px; transition-duration: 500ms}
-.menu-trigger:hover span { background-color: #8d8d8d; }
+.menu-trigger span { background-color:#bebebe; position: absolute; border-radius: 2px; transition: .3s cubic-bezier(.8, .5, .2, 1.4); width:100%; height: 3px; transition-duration: 500ms } 
+.menu-trigger:hover span { background-color: #8d8d8d; } 
 
 .menu-trigger span:nth-child(2) { top: 0px; left: 0px; } 
 .menu-trigger span:nth-child(3) { top: 9px; left: 0px; opacity: 1; } 
@@ -57,19 +56,43 @@ header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; back
 .menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
 /* ----------------------- footer ---------------------------- */
-footer { display: flex; justify-content: space-around; align-items: center; width: 100%; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; }
-footer a { color: #adadad;}
+footer { display: flex; justify-content: space-around; align-items: center; width: 100%; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; } 
+footer a { color: #adadad; } 
 footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; } 
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
 /* ----------------------- home -------------------------------- */
-.allView { height: 100vh;}
+.allView { height: 100vh; } 
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
 #scrollTop::before { content: "\2303"; position: absolute; width: 45px; top: 15px; left: 0; color: #555; font-size: 25px; } 
-#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; }  
+#scrollTop .topTxt { display: block; margin-top: 21px; font-size: 11px; } 
 
 /* ------------------- login --------------------------- */
-#bgEx { position: absolute; top: 0; left: 0; z-index: -100; opacity: .3; width: 100vw;}
+aside { width: 100%; height: 50px; margin-top: 32px; } 
+aside ul { height: 100%; display: flex; justify-content: flex-start; align-items: center; padding-left: 130px; border-bottom: 1px solid #b6b6b6; } 
+aside ul li { display: flex; align-items: center; height: 100%; padding: 0 20px; color: #666; border-right: 1px solid #b6b6b6; font-size: 14px; } 
+aside ul .homeIco { border-left: 1px solid #b6b6b6; } 
+aside ul .homeIco a { width: 16px; height: 16px; background: url(../source/home.png) center center no-repeat; background-size: contain; } 
+
+.prev { height: 50px; padding-left: 9%; margin-top: 40px; display: flex; justify-content: flex-start; } 
+.prev a { width: 61px; height: 15px; margin-right: 20px; }
+.prev a .arrowP { display: inline-block;  width: 61px; height: 15px; background: url(../source/prev.png) 0 0 no-repeat; } 
+.prev span { color: #bbb; font-size: 15px; font-family: sMedium; } 
+
+.loginS { height: 60vh; } 
+.loginS h3 { font-size: 35px; text-align: center; } 
+.loginS #loginForm { display: flex; width: 420px; margin: 0 auto; } 
+.loginS #loginForm .inputAll { width: 100%; margin-top: 50px; display: flex; flex-direction: column; align-items: stretch; } 
+.loginS #loginForm .inputAll .loginBtn { width: 100%; margin: 25px 0; height: 55px; color: #534CBF; background-color: #fff; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; } 
+/* .loginS #loginForm .inputAll .inputBox { position: relative; }  */
+#loginForm .inputAll .inputBox input { position: relative; width: 100%; padding: 10px 0; font-size: 14px; color: #666; margin-bottom: 30px; border-bottom: 1px solid #adadad; background: transparent; } 
+#loginForm .inputAll .inputBox input label { position: absolute; top: 0; left: 0; padding: 10px 0; color: #666; pointer-events: none; transition: all .5s; } 
+
+.inputAll .inputBox input:focus ~ label,
+.inputAll .inputBox input:valid ~ label { top: -20px; left: 0; color: #534CBF; font-size: 14px; } 
+
+.loginS .finding { margin: 20px auto 0 auto; width: 33%; display: flex; justify-content: center; color: #8d8d8d; font-size: 15px; } 
+.loginS .finding li { margin-right: 30px;}

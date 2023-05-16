@@ -22,7 +22,6 @@
     <title>로그인</title>
 </head>
 <body>
-    <img id="bgEx" src="./source/loginBG.png">
     <header>
         <nav>
             <a href="./index.html"><h1></h1></a>
@@ -75,19 +74,38 @@
 
     <aside>
         <ul>
-            <li><a href="#" title="home"></a></li>
-            <li><a href="#"></a></li>
+            <li class="homeIco"><a href="./index.html" title="home"></a></li>
+            <li>로그인</li>
         </ul>
     </aside>
 
-    <section>
-        <h3></h3>
-        <article></article>
-    </section>
-    
-    <section>
-        <h3></h3>
-        <article></article>
+    <div class="prev">
+        <a href="./index.html">
+            <i class="arrowP"></i>
+        </a>
+        <span>이전</span>
+    </div>
+
+    <section class="loginS">
+        <h3>로그인</h3>
+        <div class="area">
+            <form name="login" id="loginForm">
+                <div class="inputAll">
+                    <div class="inputBox">
+                        <input type="text" id="username" name="username" placeholder="로그인" value="">
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" id="password" name="password" placeholder="회원가입" value="">
+                    </div>
+                    <input type="button" class="loginBtn" value="로그인" />
+                </div>
+            </form>
+        </div>
+        <ul class="finding">
+            <li><a href="https://www.koreafilm.or.kr/member/find/kmdb/id/">아이디 찾기</a></li>
+            <li><a href="https://www.koreafilm.or.kr/member/find/kmdb/password">비밀번호 찾기</a></li>
+            <li><a href="./register.html">회원가입</a></li>
+        </ul>
     </section>
 
     <footer>
@@ -118,6 +136,7 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
