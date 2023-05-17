@@ -54,17 +54,24 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 1;
     color: white;
+    transition: all .2s ease-out;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     /* border: 2px solid yellow; */
 }
 
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    background-color: #d7d7d75a;
+}
+
 .slick-prev
 {
-    left: -25px; /* 왼쪽으로 슬라이드 버튼 이동 */
+    left: 0;
+    bottom: 0;
     z-index: 3;
 }
 [dir='rtl'] .slick-prev
@@ -74,8 +81,16 @@
 }
 .slick-prev:before
 {
-    /* content: url(../images/arrowL.png);  */
-    /* 슬라이드 이동 버튼 이미지로 변경 */
+    position: absolute;
+    bottom: -345px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border: 1.8px solid #d7d7d7;
+    content: url(../source/arrow_l.png); 
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -84,7 +99,8 @@
 
 .slick-next
 {
-    right: -20px;
+    right: 0;
+    bottom: 0;
     z-index: 3;
 }
 [dir='rtl'] .slick-next
@@ -94,7 +110,16 @@
 }
 .slick-next:before
 {
-    /* content: url(../images/arrowR.png);  */
+    position: absolute;
+    bottom: -345px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 80px;
+    border: 1.8px solid #d7d7d7;
+    content: url(../source/arrow_r.png); 
     /* 슬라이드 이동 버튼 이미지로 변경 */
 }
 [dir='rtl'] .slick-next:before

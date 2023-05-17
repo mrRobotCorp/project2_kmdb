@@ -4,7 +4,7 @@ header { padding: 20px 0; width: 100%; height: 90px; }
 header ul li { display: inline-block; } 
 
 header nav { display: flex; justify-content: space-around; align-items: center; } 
-header nav h1 { width: 330px; height: 50px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain; } 
+header nav h1 { width: 140px; height: 50px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain; } 
 header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; } 
 /* header nav .sideMenu li { margin-right: 14px; } */
 header nav .sideMenu li a { color: #666; font-size: 13px; } 
@@ -62,9 +62,50 @@ footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
 /* ----------------------- home -------------------------------- */
-.allView { width: 94%; height: 100vh; }
-.allView .slider { width: 40%; overflow: hidden; }
-.allView .slider img { width: 100%;}
+.allView { width: 92%; height: 90vh; margin: 80px auto 0 auto; }
+.allView article { width: 100%; display: flex; justify-content: space-between;}
+.allView .slider { position: relative; width: 36%; height: 100%; overflow: hidden; color: #fff; }
+.allView .slider .sBox { width: 100%;}
+.allView .slider .sImg { padding: 25% 30% 0 10%;}
+.allView .slider .sImg h4 { font-size: 45px; margin-bottom: 20px; font-family: sBold;}
+.allView .slider .sImg p { font-size: 22px; width: 70%; line-height: 160%;}
+.allView .slider .sImg01 { width: 100%; height: 600px; background: url(../source/slideImg01.jpg) center center no-repeat; background-size: cover;}
+.allView .slider .sImg02 { width: 100%; height: 600px; background: url(../source/slideImg02.jpg) center center no-repeat; background-size: cover;}
+.allView .slider .sImg03 { width: 100%; height: 600px; background: url(../source/slideImg03.jpg) center center no-repeat; background-size: cover;}
+
+.allView .sideViewAll { display: flex; flex-direction: column; justify-content: space-between;}
+.allView .collec { height: 330px; width: 850px; display: flex; justify-content: space-between; align-items: center;}
+.allView .dbPost { height: 330px; display: flex; justify-content: space-between; align-items: center; }
+.allView .title { margin-bottom: 26px; display: flex; justify-content: space-between; align-items: center;}
+
+.allView .cRight1 { height: 82%; width: 420px; padding: 25px; color: #fff; background: url(../source/viewImg01.jpg) center center no-repeat; background-size: cover;}
+.allView .cRight1 h5 { font-size: 18px; font-family: sBold;}
+.allView .cRight1 p { margin: 30px 0; font-size: 32px; font-family: sBold;}
+.allView .cRight1 span { display: inline-block; padding: 7px 11px; border: 1px solid #fff; border-radius: 35px; font-size: 14px; font-family: sMedium;}
+
+.allView .cRight2 { height: 82%; padding: 25px; border: 1px solid #ddd;}
+.allView .cRight2 .cTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
+.allView .cRight2 ul li { display: inline-block;}
+.allView .cRight2 ul li img { width: 180px; }
+.allView .cRight2 ul li p { margin: 10px 0; font-size: 15px; font-family: sMedium; color: #212529; }
+
+.allView .dRight1 { height: 82%; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; }
+.allView .dRight1 h5 { width: 100%; font-size: 18px; font-family: sBold; }
+.allView .dRight1 p { width: 90%; font-size: 28px; font-weight: sMedium; text-align: center;}
+.allView .dRight1 a { display: inline-block; padding: 7px 11px; color: #fff; border: 1px solid #fff; border-radius: 35px; text-align: center; transition: all .2s;}
+.allView .dRight1 a:hover { color: #212529; background-color: #fff;}
+
+.allView .dRight2 { height: 82%;  padding: 25px;border: 1px solid #ddd; }
+.allView .dRight2 .dTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
+.allView .dRight2 ul li { display: inline-block; }
+.allView .dRight2 ul li img { width: 150px; }
+
+/* ---------snsView ----------------- */
+.snsView { margin: 30px 0; }
+.btSns { height: 180px; }
+.btSns ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: space-between;}
+.btSns ul li { background-color: #adadad;}
+
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 
