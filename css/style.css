@@ -62,8 +62,9 @@ footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
 /* ----------------------- home -------------------------------- */
-.allView { height: 100vh; } 
-
+.allView { width: 94%; height: 100vh; }
+.allView .slider { width: 40%; overflow: hidden; }
+.allView .slider img { width: 100%;}
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
 #scrollTop:hover { transition: 0.5s ease; background-color: #dededee9; } 

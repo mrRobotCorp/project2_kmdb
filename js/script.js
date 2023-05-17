@@ -38,3 +38,12 @@ window.onload = function() {
 
 // let returnCode = document.login.returnCode.value;
 // let access = document.login.access.value;
+
+$(document).ready(function(){
+    $('.slider').slick({
+        dots: true, 
+        arrow: true,
+        slidesToShow: 1,
+        slidesToScroll: 1, 
+    });
+});
