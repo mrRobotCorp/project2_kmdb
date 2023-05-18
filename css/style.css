@@ -112,11 +112,11 @@ footer .footRight .footSns { text-align: right; }
 .allView .dRight2 ul li span { font-size: 14px; color: #666; text-overflow: ellipsis; overflow: hidden; white-space: pre; } 
 
 /* ---------snsView ----------------- */
-.snsView { margin: 30px auto; height: 180px; display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 
-.snsView .btSns { position: relative; width: 70%; padding: 20px 30px 8px 0; } 
+.snsView { margin: 30px auto; height: 140px; display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 
+.snsView .btSns { position: relative; width: 75%; padding: 20px 30px 8px 0; } 
 .snsView .btSns::after { content: ""; display: block; position: absolute; top: 20px; right: 0; bottom: 20px; width: 1px; background: #ddd; } 
 .snsView .btSns ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; align-items: space-between; } 
-.snsView .btSns ul li { width: calc(50% - 8px); height: 63px; margin-bottom: 12px; background-color: #d4d4d4; } 
+.snsView .btSns ul li { width: 24%; height: 70px; margin-bottom: 12px; background-color: #d4d4d4; text-align: right; } 
 .btSns ul li:first-child { background: url(../source/linkBG01.png) 50% 50% no-repeat; background-size: cover; } 
 .btSns ul li:nth-child(2) { background: url(../source/linkBG02.png) 50% 50% no-repeat; background-size: cover; } 
 .btSns ul li:nth-child(3) { background: url(../source/linkBG03.png) 50% 50% no-repeat; background-size: cover; } 
@@ -124,17 +124,18 @@ footer .footRight .footSns { text-align: right; }
 
 .snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; } 
 .snsView .btSns ul li a .snsLink { width: 100%; display: flex; justify-content: space-between; align-items: center; } 
-.snsView .btSns .snsLink img { width: 34px; } 
+.snsView .btSns .snsLink img { width: 32px; } 
 .snsView .btSns .snsLink p { display: flex; flex-direction: column; justify-content: flex-end; } 
-.snsView .btSns .snsLink p span:first-child { margin-bottom: 3px; font-size: 15px; color: #212529; } 
+.snsView .btSns .snsLink p span:first-child { margin-bottom: 3px; font-size: 14px; color: #212529; } 
+.snsView .btSns .snsLink p span:last-child { font-size: 11px; color: #888; } 
 
-.snsView .btIcons { width: 30%; display: flex; justify-content: center; flex-direction: column; text-align: center; } 
+.snsView .btIcons { width: 25%; display: flex; justify-content: center; flex-direction: column; text-align: center; } 
 .snsView .btIcons .icosT { color: #555; margin-bottom: 15px; font-size: 15px; } 
 .snsView .btIcons ul li { display: inline-block; width: 50px; margin-right: 4px; } 
-.snsView .btIcons ul li .snsIco01 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; } 
-.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco02.jpg) 50% 50% no-repeat; background-size: cover; } 
-.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco03.jpg) 50% 50% no-repeat; background-size: cover; } 
-.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco04.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco01 { display: block; height: 23px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco02 { display: block; height: 23px; background: url(../source/snsIco02.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco03 { display: block; height: 23px; background: url(../source/snsIco03.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco04 { display: block; height: 23px; background: url(../source/snsIco04.jpg) 50% 50% no-repeat; background-size: cover; } 
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
