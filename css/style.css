@@ -56,16 +56,21 @@ header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; back
 .menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
 /* ----------------------- footer ---------------------------- */
-footer { display: flex; justify-content: space-around; align-items: center; width: 100%; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; } 
+footer { background-color: #333; }
+.footAll { width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; } 
 footer a { color: #adadad; } 
 footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; } 
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
+footer .footRight a { margin-right: 10px;}
+footer .footRight .footLogoWrap { margin-bottom: 20px;}
+footer .footRight .footSns { text-align: right; }
+
 /* ----------------------- home -------------------------------- */
-.homeSec { width: 92%; margin: 0 auto; display: flex; flex-direction: column; }
+.homeSec { width: 90%; margin: 0 auto; display: flex; flex-direction: column; }
 .allView { width: 100%; margin: 80px auto 0 auto; }
 .allView article { width: 100%; display: flex; justify-content: space-between;}
-.allView .slider { position: relative; width: 36%; height: 100%; overflow: hidden; color: #fff; }
+.allView .slider { position: relative; width: 34%; height: 80%; overflow: hidden; color: #fff; }
 .allView .slider .sBox { width: 100%;}
 .allView .slider .sImg { padding: 25% 30% 0 10%;}
 .allView .slider .sImg h4 { font-size: 45px; margin-bottom: 20px; font-family: sBold;}
@@ -75,44 +80,61 @@ footer .footLeft .footNav li { display: inline-block; margin-right: 20px; paddin
 .allView .slider .sImg03 { width: 100%; height: 600px; background: url(../source/slideImg03.jpg) center center no-repeat; background-size: cover;}
 
 .allView .sideViewAll { height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
-.allView .collec { height: 330px; width: 850px; display: flex; justify-content: space-between; align-items: center;}
+.allView .collec { height: 330px; width: 850px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center;}
 .allView .dbPost { height: 330px; display: flex; justify-content: space-between; align-items: center; }
 .allView .title { margin-bottom: 26px; display: flex; justify-content: space-between; align-items: center;}
 
-.allView .cRight1 { height: 82%; width: 420px; padding: 25px; color: #fff; background: url(../source/viewImg01.jpg) center center no-repeat; background-size: cover;}
+.allView .cRight1 { height: 82%; width: calc(50% - 15px); padding: 25px; margin-right: 3%; color: #fff; background: url(../source/viewImg01.jpg) center center no-repeat; background-size: cover;}
 .allView .cRight1 h5 { font-size: 18px; font-family: sBold;}
 .allView .cRight1 p { margin: 30px 0; font-size: 32px; font-family: sBold;}
 .allView .cRight1 span { display: inline-block; padding: 7px 11px; border: 1px solid #fff; border-radius: 35px; font-size: 14px; font-family: sMedium;}
 
-.allView .cRight2 { height: 82%; width: calc(50% - 15px); padding: 25px; border: 1px solid #ddd;}
+.allView .cRight2 { height: 82%; width: 50%; padding: 25px; border: 1px solid #ddd;}
 .allView .cRight2 .cTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
-.allView .cRight2 ul li { display: inline-block;}
-.allView .cRight2 ul li img { width: 180px; }
-.allView .cRight2 ul li p { margin: 10px 0; font-size: 15px; font-family: sMedium; color: #212529; }
+.allView .title h4 { font-family: sMedium; font-size: 19px; color: #555; }
 
-.allView .dRight1 { height: 82%; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; }
+.allView .cRight2 ul { margin-top: 70px;}
+.allView .cRight2 ul li { display: inline-block; margin-right: 10px;}
+.allView .cRight2 ul li img { width: 170px; }
+.allView .cRight2 ul li p { margin: 20px 0; font-size: 14px; font-family: sMedium; color: #212529; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+
+.allView .dRight1 { width: 33%; height: 82%; padding: 25px; margin-right: 3%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; }
 .allView .dRight1 h5 { width: 100%; font-size: 18px; font-family: sBold; }
 .allView .dRight1 p { width: 90%; line-height: 160%; font-size: 28px; font-weight: sMedium; text-align: center;}
 .allView .dRight1 a { display: inline-block; padding: 7px 11px; color: #fff; border: 1px solid #fff; border-radius: 35px; text-align: center; transition: all .2s;}
 .allView .dRight1 a:hover { color: #212529; background-color: #fff;}
 
-.allView .dRight2 { height: 82%;  padding: 25px;border: 1px solid #ddd; }
+.allView .dRight2 { height: 82%; width: 65%;  padding: 25px;border: 1px solid #ddd; }
 .allView .dRight2 .dTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
-.allView .dRight2 ul li { display: inline-block; }
+.allView .dRight2 ul li { display: inline-block; width: 130px; margin-right: 20px; }
 .allView .dRight2 ul li img { width: 150px; }
+.allView .dRight2 ul li h6 { padding-top: 10px; font-size: 15px; font-family: sMedium; display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #212529;}
+.allView .dRight2 ul li span { font-size: 14px; color: #666; text-overflow: ellipsis; overflow: hidden; white-space: pre;}
 
 /* ---------snsView ----------------- */
-.snsView { margin: 30px 0; display: flex; width: 100%; }
-.snsView .btSns { width: 70%; height: 180px; }
-.snsView .btSns ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: space-between;}
-.snsView .btSns ul li { width: calc(50% - 6px); height: 60px; margin-bottom: 12px; background-color: #d4d4d4;}
-.snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; }
+.snsView { margin: 30px auto; height: 180px; display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+.snsView .btSns { position: relative; width: 70%; padding: 20px 30px 8px 0; }
+.snsView .btSns::after { content: ""; display: block; position: absolute; top: 20px; right: 0; bottom: 20px; width: 1px; background: #ddd;}
+.snsView .btSns ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; align-items: space-between;}
+.snsView .btSns ul li { width: calc(50% - 8px); height: 63px; margin-bottom: 12px; background-color: #d4d4d4;}
+.btSns ul li:first-child { background: url(../source/linkBG01.png) 50% 50% no-repeat; background-size: cover;}
+.btSns ul li:nth-child(2) { background: url(../source/linkBG02.png) 50% 50% no-repeat; background-size: cover;}
+.btSns ul li:nth-child(3) { background: url(../source/linkBG03.png) 50% 50% no-repeat; background-size: cover;}
+.btSns ul li:last-child { background: url(../source/linkBG04.png) 50% 50% no-repeat; background-size: cover;}
 
-.snsView .btIcons .icosT { color: #555; }
+.snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; }
+.snsView .btSns ul li a .snsLink { width: 100%; display: flex; justify-content: space-between; align-items: center; }
+.snsView .btSns .snsLink img { width: 34px; }
+.snsView .btSns .snsLink p { display: flex; flex-direction: column; justify-content: flex-end;}
+.snsView .btSns .snsLink p span:first-child { margin-bottom: 3px; font-size: 15px; color: #212529;}
+
+.snsView .btIcons { width: 30%; display: flex; justify-content: center; flex-direction: column; text-align: center; }
+.snsView .btIcons .icosT { color: #555; margin-bottom: 15px; font-size: 15px; }
+.snsView .btIcons ul li { display: inline-block; width: 50px; margin-right: 4px;}
 .snsView .btIcons ul li .snsIco01 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco02.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco03.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco04.jpg) 50% 50% no-repeat; background-size: cover; }
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
