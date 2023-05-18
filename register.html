@@ -75,7 +75,7 @@
     <aside>
         <ul>
             <li class="homeIco"><a href="./index.html" title="home"></a></li>
-            <li>로그인</li>
+            <li>회원가입</li>
         </ul>
     </aside>
 
@@ -86,57 +86,96 @@
         <span>이전</span>
     </div>
 
-    <section class="loginS">
-        <h3>로그인</h3>
+    <section class="regist">
+        <h3>회원가입</h3>
         <div class="area">
-            <form name="login" id="loginForm">
+            <form name="register" id="regisForm">
                 <div class="inputAll">
-                    <div class="inputBox">
-                        <input type="text" id="username" name="username" placeholder="로그인" value="">
+                    <div>
+                        <span>아이디</span>
+                        <div class="inputBox">
+                            <input type="text" id="username" name="username" placeholder="로그인" value="">
+                        </div>
                     </div>
-                    <div class="inputBox">
-                        <input type="password" id="password" name="password" placeholder="회원가입" value="">
+                    <div>
+                        <span>비밀번호</span>
+                        <div class="inputBox">
+                            <input type="password" id="password" name="password" placeholder="비밀번호" value="">
+                        </div>
                     </div>
-                    <input type="button" class="loginBtn" value="로그인" />
+                    <div>
+                        <span>비밀번호 확인</span>
+                        <div class="inputBox">
+                            <input type="password" id="pwCheck" name="password" placeholder="비밀번호 확인" value="">
+                        </div>
+                    </div>
+                    <div>
+                        <span>이름</span>
+                        <div class="inputBox">
+                            <input type="text" id="userName" name="userName" placeholder="이름" value="">
+                        </div>
+                    </div>
+                    <div class="mailBox">
+                        <div class="inputBox">
+                            <span>이메일 주소</span>
+                            <input type="email" id="email" name="email" placeholder="이메일" value="">
+                        </div>
+                        <span>&nbsp;@</span>
+                        <span class="domainDrop">
+                            <select name="domain">
+                                <option value="naver" selected>naver.com</option>
+                                <option value="korea">korea.net</option>
+                                <option value="daum">daum.net</option>
+                                <option value="nate">nate.com</option>
+                                <option value="hanmail">hanmail.com</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div>
+                        <span>생년월일</span>
+                        <div class="inputBox">
+                            <input type="date" id="bday" name="bday" value="">
+                        </div>
+                    </div>
+                    <input type="button" class="regisBtn" value="가입하기" />
                 </div>
             </form>
         </div>
-        <ul class="finding">
-            <li><a href="https://www.koreafilm.or.kr/member/find/kmdb/id/">아이디 찾기</a></li>
-            <li><a href="https://www.koreafilm.or.kr/member/find/kmdb/password">비밀번호 찾기</a></li>
-            <li><a href="./register.html">회원가입</a></li>
-        </ul>
+]
     </section>
 
     <footer>
-        <div id="scrollTop"><span class="blind">맨 위로 가기</span></div>
-        <div class="footLeft">
-            <ul class="footNav">
-                <li><a href="https://www.koreafilm.or.kr/privacy">개인정보처리방침</a></li>
-                <li><a href="#">1:1문의</a></li>
-                <li><a href="#">공지사항</a></li>
-                <li><a href="#">사이트맵</a></li>
-            </ul>
-            <address>
-                <p>서울시 마포구 월드컵북로 400 한국영상자료원 (우 03925) T.02-3153-2001 F.02-3153-2080</p>
-            </address>
-            <p>ⓒ Korean Film Archive.ALL Rights Reserved</p>
-        </div>
-        <div class="footRight">
-            <div class="footLogoWrap">
-                <a href="https://www.kmdb.or.kr/main"><img src="./source/foot_logo.png" alt="한국영화데이터베이스 KMDB"></a>
-                <a href="https://www.koreafilm.or.kr/main"><img src="./source/foot_logo2.png" alt="한국영상자료원"></a>
+        <div class="footAll">
+            <div id="scrollTop"><span class="blind">맨 위로 가기</span></div>
+            <div class="footLeft">
+                <ul class="footNav">
+                    <li><a href="https://www.koreafilm.or.kr/privacy">개인정보처리방침</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <address>
+                    <p>서울시 마포구 월드컵북로 400 한국영상자료원 (우 03925) T.02-3153-2001 F.02-3153-2080</p>
+                </address>
+                <p>ⓒ Korean Film Archive.ALL Rights Reserved</p>
             </div>
-            <div class="footSns">
-                <a href="https://twitter.com/Film_Archive" target="_blank"><img src="./source/twitter.png" alt="트위터"></a>
-                <a href="https://www.facebook.com/koreanfilmarchive" target="_blank"><img src="./source/facebook.png" alt="페이스북"></a>
+            <div class="footRight">
+                <div class="footLogoWrap">
+                    <a href="https://www.kmdb.or.kr/main"><img src="./source/foot_logo.png" alt="한국영화데이터베이스 KMDB"></a>
+                    <a href="https://www.koreafilm.or.kr/main"><img src="./source/foot_logo2.png" alt="한국영상자료원"></a>
+                </div>
+                <div class="footSns">
+                    <a href="https://twitter.com/Film_Archive" target="_blank"><img src="./source/twitter.png"
+                            alt="트위터"></a>
+                    <a href="https://www.facebook.com/koreanfilmarchive" target="_blank"><img src="./source/facebook.png"
+                            alt="페이스북"></a>
+                </div>
             </div>
         </div>
     </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 </html>

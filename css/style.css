@@ -1,4 +1,4 @@
-@import './reset.css';body { font-family: sRegular; overflow-x: hidden; } 
+@import './reset.css'; body { font-family: sRegular; overflow-x: hidden; } 
 
 header { padding: 20px 0; width: 100%; height: 90px; } 
 header ul li { display: inline-block; } 
@@ -56,85 +56,85 @@ header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; back
 .menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
 /* ----------------------- footer ---------------------------- */
-footer { background-color: #333; }
+footer { background-color: #333; } 
 .footAll { width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; } 
 footer a { color: #adadad; } 
 footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-content: space-evenly; } 
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
-footer .footRight a { margin-right: 10px;}
-footer .footRight .footLogoWrap { margin-bottom: 20px;}
-footer .footRight .footSns { text-align: right; }
+footer .footRight a { margin-right: 10px; } 
+footer .footRight .footLogoWrap { margin-bottom: 20px; } 
+footer .footRight .footSns { text-align: right; } 
 
 /* ----------------------- home -------------------------------- */
-.homeSec { width: 90%; margin: 0 auto; display: flex; flex-direction: column; }
-.allView { width: 100%; margin: 80px auto 0 auto; }
-.allView article { width: 100%; display: flex; justify-content: space-between;}
-.allView .slider { position: relative; width: 34%; height: 80%; overflow: hidden; color: #fff; }
-.allView .slider .sBox { width: 100%;}
-.allView .slider .sImg { padding: 25% 30% 0 10%;}
-.allView .slider .sImg h4 { font-size: 45px; margin-bottom: 20px; font-family: sBold;}
-.allView .slider .sImg p { font-size: 22px; width: 70%; line-height: 160%;}
-.allView .slider .sImg01 { width: 100%; height: 600px; background: url(../source/slideImg01.jpg) center center no-repeat; background-size: cover;}
-.allView .slider .sImg02 { width: 100%; height: 600px; background: url(../source/slideImg02.jpg) center center no-repeat; background-size: cover;}
-.allView .slider .sImg03 { width: 100%; height: 600px; background: url(../source/slideImg03.jpg) center center no-repeat; background-size: cover;}
+.homeSec { width: 90%; margin: 0 auto; display: flex; flex-direction: column; } 
+.allView { width: 100%; margin: 80px auto 0 auto; } 
+.allView article { width: 100%; display: flex; justify-content: space-between; } 
+.allView .slider { position: relative; width: 34%; height: 80%; overflow: hidden; color: #fff; } 
+.allView .slider .sBox { width: 100%; } 
+.allView .slider .sImg { padding: 25% 30% 0 10%; } 
+.allView .slider .sImg h4 { font-size: 45px; margin-bottom: 20px; font-family: sBold; } 
+.allView .slider .sImg p { font-size: 22px; width: 70%; line-height: 160%; } 
+.allView .slider .sImg01 { width: 100%; height: 600px; background: url(../source/slideImg01.jpg) center center no-repeat; background-size: cover; } 
+.allView .slider .sImg02 { width: 100%; height: 600px; background: url(../source/slideImg02.jpg) center center no-repeat; background-size: cover; } 
+.allView .slider .sImg03 { width: 100%; height: 600px; background: url(../source/slideImg03.jpg) center center no-repeat; background-size: cover; } 
 
-.allView .sideViewAll { height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
-.allView .collec { height: 330px; width: 850px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center;}
-.allView .dbPost { height: 330px; display: flex; justify-content: space-between; align-items: center; }
-.allView .title { margin-bottom: 26px; display: flex; justify-content: space-between; align-items: center;}
+.allView .sideViewAll { height: 100%; display: flex; flex-direction: column; justify-content: space-between; } 
+.allView .collec { height: 330px; width: 850px; margin-bottom: 50px; display: flex; justify-content: space-between; align-items: center; } 
+.allView .dbPost { height: 330px; display: flex; justify-content: space-between; align-items: center; } 
+.allView .title { margin-bottom: 26px; display: flex; justify-content: space-between; align-items: center; } 
 
-.allView .cRight1 { height: 82%; width: calc(50% - 15px); padding: 25px; margin-right: 3%; color: #fff; background: url(../source/viewImg01.jpg) center center no-repeat; background-size: cover;}
-.allView .cRight1 h5 { font-size: 18px; font-family: sBold;}
-.allView .cRight1 p { margin: 30px 0; font-size: 32px; font-family: sBold;}
-.allView .cRight1 span { display: inline-block; padding: 7px 11px; border: 1px solid #fff; border-radius: 35px; font-size: 14px; font-family: sMedium;}
+.allView .cRight1 { height: 82%; width: calc(50% - 15px); padding: 25px; margin-right: 3%; color: #fff; background: url(../source/viewImg01.jpg) center center no-repeat; background-size: cover; } 
+.allView .cRight1 h5 { font-size: 18px; font-family: sBold; } 
+.allView .cRight1 p { margin: 30px 0; font-size: 32px; font-family: sBold; } 
+.allView .cRight1 span { display: inline-block; padding: 7px 11px; border: 1px solid #fff; border-radius: 35px; font-size: 14px; font-family: sMedium; } 
 
-.allView .cRight2 { height: 82%; width: 50%; padding: 25px; border: 1px solid #ddd;}
-.allView .cRight2 .cTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
-.allView .title h4 { font-family: sMedium; font-size: 19px; color: #555; }
+.allView .cRight2 { height: 82%; width: 50%; padding: 25px; border: 1px solid #ddd; } 
+.allView .cRight2 .cTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat; } 
+.allView .title h4 { font-family: sMedium; font-size: 19px; color: #555; } 
 
-.allView .cRight2 ul { margin-top: 70px;}
-.allView .cRight2 ul li { display: inline-block; margin-right: 10px;}
-.allView .cRight2 ul li img { width: 170px; }
-.allView .cRight2 ul li p { margin: 20px 0; font-size: 14px; font-family: sMedium; color: #212529; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.allView .cRight2 ul { margin-top: 70px; } 
+.allView .cRight2 ul li { display: inline-block; margin-right: 10px; } 
+.allView .cRight2 ul li img { width: 170px; } 
+.allView .cRight2 ul li p { margin: 20px 0; font-size: 14px; font-family: sMedium; color: #212529; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; } 
 
-.allView .dRight1 { width: 33%; height: 82%; padding: 25px; margin-right: 3%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; }
-.allView .dRight1 h5 { width: 100%; font-size: 18px; font-family: sBold; }
-.allView .dRight1 p { width: 90%; line-height: 160%; font-size: 28px; font-weight: sMedium; text-align: center;}
-.allView .dRight1 a { display: inline-block; padding: 7px 11px; color: #fff; border: 1px solid #fff; border-radius: 35px; text-align: center; transition: all .2s;}
-.allView .dRight1 a:hover { color: #212529; background-color: #fff;}
+.allView .dRight1 { width: 33%; height: 82%; padding: 25px; margin-right: 3%; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; } 
+.allView .dRight1 h5 { width: 100%; font-size: 18px; font-family: sBold; } 
+.allView .dRight1 p { width: 90%; line-height: 160%; font-size: 28px; font-weight: sMedium; text-align: center; } 
+.allView .dRight1 a { display: inline-block; padding: 7px 11px; color: #fff; border: 1px solid #fff; border-radius: 35px; text-align: center; transition: all .2s; } 
+.allView .dRight1 a:hover { color: #212529; background-color: #fff; } 
 
-.allView .dRight2 { height: 82%; width: 65%;  padding: 25px;border: 1px solid #ddd; }
-.allView .dRight2 .dTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
-.allView .dRight2 ul li { display: inline-block; width: 130px; margin-right: 20px; }
-.allView .dRight2 ul li img { width: 150px; }
-.allView .dRight2 ul li h6 { padding-top: 10px; font-size: 15px; font-family: sMedium; display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #212529;}
-.allView .dRight2 ul li span { font-size: 14px; color: #666; text-overflow: ellipsis; overflow: hidden; white-space: pre;}
+.allView .dRight2 { height: 82%; width: 65%; padding: 25px; border: 1px solid #ddd; } 
+.allView .dRight2 .dTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat; } 
+.allView .dRight2 ul li { display: inline-block; width: 130px; margin-right: 20px; } 
+.allView .dRight2 ul li img { width: 150px; } 
+.allView .dRight2 ul li h6 { padding-top: 10px; font-size: 15px; font-family: sMedium; display: inline-block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color: #212529; } 
+.allView .dRight2 ul li span { font-size: 14px; color: #666; text-overflow: ellipsis; overflow: hidden; white-space: pre; } 
 
 /* ---------snsView ----------------- */
-.snsView { margin: 30px auto; height: 180px; display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
-.snsView .btSns { position: relative; width: 70%; padding: 20px 30px 8px 0; }
-.snsView .btSns::after { content: ""; display: block; position: absolute; top: 20px; right: 0; bottom: 20px; width: 1px; background: #ddd;}
-.snsView .btSns ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; align-items: space-between;}
-.snsView .btSns ul li { width: calc(50% - 8px); height: 63px; margin-bottom: 12px; background-color: #d4d4d4;}
-.btSns ul li:first-child { background: url(../source/linkBG01.png) 50% 50% no-repeat; background-size: cover;}
-.btSns ul li:nth-child(2) { background: url(../source/linkBG02.png) 50% 50% no-repeat; background-size: cover;}
-.btSns ul li:nth-child(3) { background: url(../source/linkBG03.png) 50% 50% no-repeat; background-size: cover;}
-.btSns ul li:last-child { background: url(../source/linkBG04.png) 50% 50% no-repeat; background-size: cover;}
+.snsView { margin: 30px auto; height: 180px; display: flex; justify-content: space-between; align-items: center; width: 100%; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; } 
+.snsView .btSns { position: relative; width: 70%; padding: 20px 30px 8px 0; } 
+.snsView .btSns::after { content: ""; display: block; position: absolute; top: 20px; right: 0; bottom: 20px; width: 1px; background: #ddd; } 
+.snsView .btSns ul { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; align-items: space-between; } 
+.snsView .btSns ul li { width: calc(50% - 8px); height: 63px; margin-bottom: 12px; background-color: #d4d4d4; } 
+.btSns ul li:first-child { background: url(../source/linkBG01.png) 50% 50% no-repeat; background-size: cover; } 
+.btSns ul li:nth-child(2) { background: url(../source/linkBG02.png) 50% 50% no-repeat; background-size: cover; } 
+.btSns ul li:nth-child(3) { background: url(../source/linkBG03.png) 50% 50% no-repeat; background-size: cover; } 
+.btSns ul li:last-child { background: url(../source/linkBG04.png) 50% 50% no-repeat; background-size: cover; } 
 
-.snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; }
-.snsView .btSns ul li a .snsLink { width: 100%; display: flex; justify-content: space-between; align-items: center; }
-.snsView .btSns .snsLink img { width: 34px; }
-.snsView .btSns .snsLink p { display: flex; flex-direction: column; justify-content: flex-end;}
-.snsView .btSns .snsLink p span:first-child { margin-bottom: 3px; font-size: 15px; color: #212529;}
+.snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; } 
+.snsView .btSns ul li a .snsLink { width: 100%; display: flex; justify-content: space-between; align-items: center; } 
+.snsView .btSns .snsLink img { width: 34px; } 
+.snsView .btSns .snsLink p { display: flex; flex-direction: column; justify-content: flex-end; } 
+.snsView .btSns .snsLink p span:first-child { margin-bottom: 3px; font-size: 15px; color: #212529; } 
 
-.snsView .btIcons { width: 30%; display: flex; justify-content: center; flex-direction: column; text-align: center; }
-.snsView .btIcons .icosT { color: #555; margin-bottom: 15px; font-size: 15px; }
-.snsView .btIcons ul li { display: inline-block; width: 50px; margin-right: 4px;}
-.snsView .btIcons ul li .snsIco01 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco02.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco03.jpg) 50% 50% no-repeat; background-size: cover; }
-.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco04.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons { width: 30%; display: flex; justify-content: center; flex-direction: column; text-align: center; } 
+.snsView .btIcons .icosT { color: #555; margin-bottom: 15px; font-size: 15px; } 
+.snsView .btIcons ul li { display: inline-block; width: 50px; margin-right: 4px; } 
+.snsView .btIcons ul li .snsIco01 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco02.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco03.jpg) 50% 50% no-repeat; background-size: cover; } 
+.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco04.jpg) 50% 50% no-repeat; background-size: cover; } 
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
@@ -150,8 +150,8 @@ aside ul .homeIco { border-left: 1px solid #b6b6b6; }
 aside ul .homeIco a { width: 16px; height: 16px; background: url(../source/home.png) center center no-repeat; background-size: contain; } 
 
 .prev { height: 50px; padding-left: 9%; margin-top: 40px; display: flex; justify-content: flex-start; } 
-.prev a { width: 61px; height: 15px; margin-right: 20px; }
-.prev a .arrowP { display: inline-block;  width: 61px; height: 15px; background: url(../source/prev.png) 0 0 no-repeat; } 
+.prev a { width: 61px; height: 15px; margin-right: 20px; } 
+.prev a .arrowP { display: inline-block; width: 61px; height: 15px; background: url(../source/prev.png) 0 0 no-repeat; } 
 .prev span { color: #bbb; font-size: 15px; font-family: sMedium; } 
 
 .loginS { height: 60vh; } 
@@ -159,7 +159,9 @@ aside ul .homeIco a { width: 16px; height: 16px; background: url(../source/home.
 .loginS #loginForm { display: flex; width: 420px; margin: 0 auto; } 
 .loginS #loginForm .inputAll { width: 100%; margin-top: 50px; display: flex; flex-direction: column; align-items: stretch; } 
 .loginS #loginForm .inputAll .loginBtn { width: 100%; margin: 25px 0; height: 55px; color: #534CBF; background-color: #fff; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; } 
-/* .loginS #loginForm .inputAll .inputBox { position: relative; }  */
+.loginS #loginForm .inputAll .loginBtn:hover { color: #fff; background-color: #534CBF; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; transition: all .4s; } 
+
+
 #loginForm .inputAll .inputBox input { position: relative; width: 100%; padding: 10px 0; font-size: 14px; color: #666; margin-bottom: 30px; border-bottom: 1px solid #adadad; background: transparent; } 
 #loginForm .inputAll .inputBox input label { position: absolute; top: 0; left: 0; padding: 10px 0; color: #666; pointer-events: none; transition: all .5s; } 
 
@@ -167,4 +169,26 @@ aside ul .homeIco a { width: 16px; height: 16px; background: url(../source/home.
 .inputAll .inputBox input:valid ~ label { top: -20px; left: 0; color: #534CBF; font-size: 14px; } 
 
 .loginS .finding { margin: 20px auto 0 auto; width: 33%; display: flex; justify-content: center; color: #8d8d8d; font-size: 15px; } 
-.loginS .finding li { margin-right: 30px;}
+.loginS .finding li { margin-right: 30px; } 
+
+/* ------------------------ register ----------------------- */
+.regist { height: 100vh; } 
+.regist h3 { font-size: 35px; text-align: center; } 
+.regist #regisForm { display: flex; width: 700px; margin: 0 auto; } 
+.regist #regisForm .inputAll { width: 100%; margin-top: 50px; display: flex; flex-direction: column; align-items: stretch; } 
+.regist #regisForm .inputAll .mailBox { width: 100%; display: flex; align-items: center; justify-content: stretch;}
+.regist #regisForm .inputAll .mailBox .inputBox { width: 60%; }
+.regist #regisForm .inputAll .regisBtn { width: 100%; margin: 25px 0; height: 55px; color: #534CBF; background-color: #fff; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; } 
+.regist #regisForm .inputAll .regisBtn:hover { color: #fff; background-color: #534CBF; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; transition: all .4s; } 
+
+.domainDrop { width: 35%; position: relative; display: inline-block; vertical-align: middle; margin: 10px; }
+.domainDrop select { width: 100%; background-color: #847cee; color: #fff; font-size: inherit; padding: .5em; padding-right: 2.5em; border: 0; margin: 0; border-radius: 5px; text-indent: 0.01px; text-overflow: ''; appearance: none; }
+
+.domainDrop::before,
+.domainDrop::after { content: ""; position: absolute; pointer-events: none; } 
+.domainDrop::after { content: "\25BC"; height: 1em; font-size: .625em; color: rgba(0, 0, 0, 0.644); line-height: 1; right: 1.2em; top: 50%; margin-top: -.5em; } 
+.domainDrop::before { width: 2em; right: 0; top: 0; bottom: 0; border-radius: 0 5px 5px 0; background-color: rgba(0, 0, 0, 0.322); } 
+
+#regisForm .inputAll .inputBox input { position: relative; width: 100%; padding: 10px 0; font-size: 14px; color: #666; margin-bottom: 30px; border-bottom: 1px solid #adadad; background: transparent; } 
+#regisForm .inputAll .inputBox input label { position: absolute; top: 0; left: 0; padding: 10px 0; color: #666; pointer-events: none; transition: all .5s; } 
+
