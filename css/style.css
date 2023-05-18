@@ -62,7 +62,8 @@ footer .footLeft { height: 100%; display: flex; flex-direction: column; justify-
 footer .footLeft .footNav li { display: inline-block; margin-right: 20px; padding-right: 20px; border-right: 1px solid #adadad; } 
 
 /* ----------------------- home -------------------------------- */
-.allView { width: 92%; height: 90vh; margin: 80px auto 0 auto; }
+.homeSec { width: 92%; margin: 0 auto; display: flex; flex-direction: column; }
+.allView { width: 100%; margin: 80px auto 0 auto; }
 .allView article { width: 100%; display: flex; justify-content: space-between;}
 .allView .slider { position: relative; width: 36%; height: 100%; overflow: hidden; color: #fff; }
 .allView .slider .sBox { width: 100%;}
@@ -73,7 +74,7 @@ footer .footLeft .footNav li { display: inline-block; margin-right: 20px; paddin
 .allView .slider .sImg02 { width: 100%; height: 600px; background: url(../source/slideImg02.jpg) center center no-repeat; background-size: cover;}
 .allView .slider .sImg03 { width: 100%; height: 600px; background: url(../source/slideImg03.jpg) center center no-repeat; background-size: cover;}
 
-.allView .sideViewAll { display: flex; flex-direction: column; justify-content: space-between;}
+.allView .sideViewAll { height: 100%; display: flex; flex-direction: column; justify-content: space-between;}
 .allView .collec { height: 330px; width: 850px; display: flex; justify-content: space-between; align-items: center;}
 .allView .dbPost { height: 330px; display: flex; justify-content: space-between; align-items: center; }
 .allView .title { margin-bottom: 26px; display: flex; justify-content: space-between; align-items: center;}
@@ -83,7 +84,7 @@ footer .footLeft .footNav li { display: inline-block; margin-right: 20px; paddin
 .allView .cRight1 p { margin: 30px 0; font-size: 32px; font-family: sBold;}
 .allView .cRight1 span { display: inline-block; padding: 7px 11px; border: 1px solid #fff; border-radius: 35px; font-size: 14px; font-family: sMedium;}
 
-.allView .cRight2 { height: 82%; padding: 25px; border: 1px solid #ddd;}
+.allView .cRight2 { height: 82%; width: calc(50% - 15px); padding: 25px; border: 1px solid #ddd;}
 .allView .cRight2 .cTitle a { display: block; width: 30px; height: 30px; background: url(../source/arrow_d.png) center center no-repeat;}
 .allView .cRight2 ul li { display: inline-block;}
 .allView .cRight2 ul li img { width: 180px; }
@@ -91,7 +92,7 @@ footer .footLeft .footNav li { display: inline-block; margin-right: 20px; paddin
 
 .allView .dRight1 { height: 82%; padding: 25px; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #fff; background: url(../source/viewImg02.jpg) center no-repeat; background-size: cover; }
 .allView .dRight1 h5 { width: 100%; font-size: 18px; font-family: sBold; }
-.allView .dRight1 p { width: 90%; font-size: 28px; font-weight: sMedium; text-align: center;}
+.allView .dRight1 p { width: 90%; line-height: 160%; font-size: 28px; font-weight: sMedium; text-align: center;}
 .allView .dRight1 a { display: inline-block; padding: 7px 11px; color: #fff; border: 1px solid #fff; border-radius: 35px; text-align: center; transition: all .2s;}
 .allView .dRight1 a:hover { color: #212529; background-color: #fff;}
 
@@ -101,10 +102,17 @@ footer .footLeft .footNav li { display: inline-block; margin-right: 20px; paddin
 .allView .dRight2 ul li img { width: 150px; }
 
 /* ---------snsView ----------------- */
-.snsView { margin: 30px 0; }
-.btSns { height: 180px; }
-.btSns ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: space-between;}
-.btSns ul li { background-color: #adadad;}
+.snsView { margin: 30px 0; display: flex; width: 100%; }
+.snsView .btSns { width: 70%; height: 180px; }
+.snsView .btSns ul { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: space-between;}
+.snsView .btSns ul li { width: calc(50% - 6px); height: 60px; margin-bottom: 12px; background-color: #d4d4d4;}
+.snsView .btSns ul li a { display: flex; align-items: center; height: 100%; padding: 0 16px; font-size: 13px; color: #666; }
+
+.snsView .btIcons .icosT { color: #555; }
+.snsView .btIcons ul li .snsIco01 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco02 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco03 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
+.snsView .btIcons ul li .snsIco04 { display: block; height: 26.87px; background: url(../source/snsIco01.jpg) 50% 50% no-repeat; background-size: cover; }
 
 /* ------------------ scrollTop ------------------------- */
 #scrollTop { background-color: rgba(255, 255, 255, 0.925); box-shadow: 0px 0px 2px #565656e8; color:#000; align-content: center; width: 45px; height: 45px; border: transparent; border-radius: 50px; text-align: center; font-size: 12px; bottom: 40px; right: 50px; position: fixed; z-index: 3; cursor: pointer; } 
