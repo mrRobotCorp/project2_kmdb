@@ -7,7 +7,7 @@ header nav { display: flex; justify-content: space-around; align-items: center; 
 header nav h1 { width: 140px; height: 50px; background: url(../source/logo_kmdb.png) center center no-repeat; background-size: contain; } 
 header nav .sideMenu { display: flex; width: 330px; justify-content: space-between; } 
 header nav .sideMenu li a { color: #666; font-size: 13px; } 
-header nav .sideMenu .toRegister { cursor: pointer;}
+header nav .sideMenu .toRegister { cursor: pointer; } 
 header nav .sideMenu li:hover a { color: #222; } 
 header form { display: flex; align-items: center; width: 30%; height: 50px; border: 1px solid #000; overflow: hidden; } 
 header form span { display: inline-block; padding: 0 16px; height: 100%; display: flex; align-items: center; margin-right: 10px; font-size: 14px; color: #666; background-color: #f5f5f5; } 
@@ -25,6 +25,7 @@ header .btMenu #gnb li a::after { content: ''; position: absolute; height: 3px; 
 header .btMenu #gnb li a:hover:after { width: 100%; } 
 
 header .btMenu .gnbWrapAll { display: flex; flex-direction: column; justify-content: center; position: fixed; z-index: 150; top: 0; right: 0; height: 100vh; width: 0; background-color: #fff; box-shadow: -2px 0 4px #cdcdcd; overflow: hidden; } 
+
 header .btMenu .gnbWrapAll.active { width: 75%; } 
 header .btMenu .gnbWrap, .gnbLog { margin-left: 160px; } 
 header .btMenu .gnbWrap li { display: block; padding: 25px 0; font-size: 23px; font-family: sMedium; } 
@@ -51,10 +52,10 @@ header .btMenu .upBtn i { display: inline-block; width: 13px; height: 13px; back
 .menu-trigger:not(.open):hover span:nth-child(2) { transform: rotate(6deg) scaleY(1.1); } 
 .menu-trigger:not(.open):hover span:nth-child(3) { transform: rotate(-4deg) scaleY(1.1); } 
 .menu-trigger:not(.open):hover span:nth-child(4) { transform: rotate(6deg) scaleY(1.1); } 
-.menu-trigger.open span:nth-child(2) { transform: rotate(45deg); top: 13px; } 
-.menu-trigger.open span:nth-child(3) { opacity:0; } 
-.menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 
+.menu-trigger.open span:nth-child(2) { transform: rotate(45deg); top: 13px; } 
+.menu-trigger.open span:nth-child(3) { opacity: 0; } 
+.menu-trigger.open span:nth-child(4) { transform: rotate(-45deg); top: 13px; } 
 /* ----------------------- footer ---------------------------- */
 footer { background-color: #333; } 
 .footAll { width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; color: #adadad; background-color: #333; font-size : 13px; height: 130px; } 
@@ -177,13 +178,13 @@ aside ul .homeIco a { width: 16px; height: 16px; background: url(../source/home.
 .regist h3 { font-size: 35px; text-align: center; } 
 .regist #regisForm { display: flex; width: 700px; margin: 0 auto; } 
 .regist #regisForm .inputAll { width: 100%; margin-top: 50px; display: flex; flex-direction: column; align-items: stretch; } 
-.regist #regisForm .inputAll .mailBox { width: 100%; display: flex; align-items: center; justify-content: stretch;}
-.regist #regisForm .inputAll .mailBox .inputBox { width: 60%; }
+.regist #regisForm .inputAll .mailBox { width: 100%; display: flex; align-items: center; justify-content: stretch; } 
+.regist #regisForm .inputAll .mailBox .inputBox { width: 60%; } 
 .regist #regisForm .inputAll .regisBtn { width: 100%; margin: 25px 0; height: 55px; color: #534CBF; background-color: #fff; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; } 
 .regist #regisForm .inputAll .regisBtn:hover { color: #fff; background-color: #534CBF; border: 2px solid #534CBF; font-size: 1.2em; cursor: pointer; transition: all .4s; } 
 
-.domainDrop { width: 35%; position: relative; display: inline-block; vertical-align: middle; margin: 10px; }
-.domainDrop select { width: 100%; background-color: #847cee; color: #fff; font-size: inherit; padding: .5em; padding-right: 2.5em; border: 0; margin: 0; border-radius: 5px; text-indent: 0.01px; text-overflow: ''; appearance: none; cursor: pointer; }
+.domainDrop { width: 35%; position: relative; display: inline-block; vertical-align: middle; margin: 10px; } 
+.domainDrop select { width: 100%; background-color: #847cee; color: #fff; font-size: inherit; padding: .5em; padding-right: 2.5em; border: 0; margin: 0; border-radius: 5px; text-indent: 0.01px; text-overflow: ''; appearance: none; cursor: pointer; } 
 
 .domainDrop::before,
 .domainDrop::after { content: ""; position: absolute; pointer-events: none; } 
